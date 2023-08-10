@@ -9,5 +9,7 @@ Megatecla es una tienda de productos informáticos creada con HTML y CSS usando 
 
 ## Ver ejemplo ↙️
 
+* https://larysahoryanska.github.io/megatecla/
+
 ## Instalación
 Este proyecto no necesita instalación. Simplemente, haz doble click en el index.html
