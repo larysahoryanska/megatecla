@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins';
+    color: white;
+    position: relative;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+.header{
+    max-width: 100%;
+    background-color: rgb(4, 119, 134);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;  
+}
+
+.header-nav{
+    padding-left: 10%;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo img{
+    width: 40px;
+    border-radius: 10px;   
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    
+}
+.nav li{
+    font-size: 18px;
+    
+}
+
+.nav li a{
+    text-decoration: none;     
+}
+
+.nav li a:visited{
+    color: white;
+}
+
+.basket a {
+    font-size: 18px;
+    font-family: 'Poppins';
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.basket img{
+    width: 37px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+footer{
+    background-color: rgb(24, 189, 240);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+    text-decoration: none;
+}
+.oferr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: rgb(4, 119, 134);
+    margin: 3%;       
+}
+
+.oferr-text{
+    display: flex;
+    margin: 40px auto; 
+    font-size: 40px;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.oferr-slogan,h2 {
+    text-align: center;
+}
+
+.oferr-search{
+    width: 360px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255,0.5);
+    padding-left: 15px;
+    margin: 5%; 
+}
+
+.oferr-search::placeholder{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: white; 
+}
+
+.oferr-search:focus{
+    outline:none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.oferr-img img{
+    
+    max-width: 100%;
+    border-radius: 30px;
+    margin-right: 100px; 
+      
+}
+
+.content-productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+.article-a1 img:hover{
+transform: scale(1.25);
+transition: transform 0.3s;
+}
+
+div img{
+   max-width: 100%;
+   
+}
+.article-a1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+button{
+    color: white;
+    background-color:rgb(4, 119, 134);
+    margin-top: 25%;
+    padding: 2%;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+footer p a{
+    color: white;
+}
+@media(max-width:600px){
+   
+    .header{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .header-nav{
+        padding-left: 0%;
+    }
+    .nav{
+        gap:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .oferr-slogan,h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .oferr-search{
+        width: 180px;
+       
+    }
+    .content-productos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}

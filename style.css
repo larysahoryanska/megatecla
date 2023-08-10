@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins';
+    color: white;
+    position: relative;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+.bgn-image{
+    background-image: url('./imagenes/bgn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 20px; 
+}
+
+.header{
+    background-color: rgb(4, 119, 134);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.header-nav{
+    padding-left: 5%;
+}
+
+
+
+.logo img{
+    width: 40px;
+    border-radius: 10px; 
+    margin: 15px;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap:50px;
+}
+
+.nav li{
+    font-size: 18px;    
+}
+
+.nav li a{
+    text-decoration: none; 
+    color: white;      
+}
+
+.nav li a:visited{
+    color: white;
+}
+
+.basket a {
+    font-size: 18px;
+    font-family: 'Poppins';
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.basket img{
+    width: 37px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.interior h2, p {
+    text-align: center; 
+}
+
+.interior-slogan{
+    margin-top: 40px;
+    font-size: 100px;
+    font-weight: bold;  
+}
+
+.interior-text{ 
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.interior-search{
+    display: block;
+    margin: 40px auto ;
+    width: 360px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255,0.5);
+    text-align: left;
+    padding-left: 15px;  
+}
+
+
+.interior-search::placeholder{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: white;
+}
+    
+.interior-search:focus{
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+}
+
+.content div a img:hover{
+transform: scale(1.25);
+transition: transform 0.3s;
+}
+
+.content div a img{
+   max-width: 100%;
+}
+
+.oferr{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items: center;  
+    background-color: rgb(4, 119, 134);
+    margin:3% ,auto;       
+}
+
+.oferr-text{
+    
+    display: flex;
+    margin: 40px auto; 
+    font-size: 40px;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.oferr-slogan,h2 {
+    text-align: center;
+}
+
+.oferr-search{
+    display: block;
+    width: 360px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:rgb(255, 255, 255,0.5);
+    padding-left: 15px;
+    margin: 5%; 
+}
+
+.oferr-search::placeholder{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: white; 
+}
+
+.oferr-search:focus{
+    outline:none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.oferr-img img{
+    max-width: 100%;
+    border-radius: 30px;
+    margin-right: 100px;
+}
+
+footer{
+    background-color: rgb(24, 189, 240);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+    text-decoration: none;
+}
+
+.mapa h3{
+    font-size: 40px;
+}
+
+.mapa {
+    color: rgb(4, 119, 134);
+    margin: 40px auto; 
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3%;
+}
+.mapa-im{
+    margin-top: 3%;
+}
+
+footer p a{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: white;
+}
+
+
+@media (max-width:600px){
+    
+    .container{
+        max-width: 100%;
+        display: block;
+        align-items: center;
+    }
+   
+    .header{
+        display:flex;
+        justify-content:space-around;
+    }
+    .header-nav{
+        padding-left: 0%;
+    }
+    .nav{
+        gap:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .interior-slogan{
+        font-size: 45px;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .oferr{
+        align-items: center;
+    }
+    .oferr-slogan,h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .oferr-search{
+        width: 250px;
+       
+    }
+    .interior-search{
+        width: 250px;
+}
+}
+

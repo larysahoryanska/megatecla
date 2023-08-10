@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+    color: white;   
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+@media(max-width:700px){
+
+}
+
+.header{
+    width: 100%;
+
+    background-color: rgb(4, 119, 134);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;  
+}
+
+.header-nav{
+    padding-left: 10%;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.logo img{
+    width: 40px;
+    border-radius: 10px;   
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 60px;
+    
+}
+.nav li{
+    font-size: 18px;
+    
+}
+
+.nav li a{
+    text-decoration: none;     
+}
+
+.nav li a:visited{
+    color: white;
+}
+
+.basket a {
+    font-size: 18px;
+    font-family: 'Poppins';
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.basket img{
+    width: 37px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.content-productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+}
+div h2{
+    color:rgb(4, 119, 134) ;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.article-a1 img:hover{
+transform: scale(1.25);
+transition: transform 0.3s;
+}
+
+div img{
+   max-width: 100%;
+   
+}
+.article-a1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;   
+}
+
+button{
+    color: white;
+    background-color:rgb(4, 119, 134);
+    margin-top: 25%;
+    padding: 2%;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgb(24, 189, 240);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+    text-decoration: none;
+}
+
+footer p a{
+    color: white;
+}
+@media(max-width:600px){
+   
+    .header{
+        display:flex;
+        justify-content:space-around;
+    }
+     
+    .nav{
+        gap:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .header-nav{
+        padding-left: 0%;
+    }
+    .content-productos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+   
+}
