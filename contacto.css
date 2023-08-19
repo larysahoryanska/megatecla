@@ -1,45 +1,50 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
 }
 
 body{
-    font-family: 'Poppins';
     color: rgb(3, 60, 87);
+    
 }
 
 .container-fluid{
     max-width: 100%;
-    margin: auto;
+    margin:  auto;
+    padding: 0;
 }
 
 .header{
     background-color:  rgb(4, 119, 134);
     display: flex;
     justify-content:space-between;
-    align-items: center;
-    margin-top: 50px;
-    max-width: 100%;
+    align-items: center; 
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    /* si queremos haser nav-bar pegado a top de la pagina
+    position:fixed;
+    z-index:1000;
+    top:30px;
+    /*max-width:1000px;*/
+    /*left:0;*/
+    width: 100%;
+    margin-top: 30px; 
 }
 
 .header-nav{
     padding-left: 10%;
 }
 
-
-.logo a{
-    display: flex;
-    align-items: center;
-    margin: 15px;
-}
-
 .logo img{
     width: 40px;
-    border-radius: 10px;   
+    border-radius: 10px;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);   
+    margin: 15px;
 }
 
 .nav{
     display: flex;
+    justify-content: space-around;
     list-style: none;
     gap: 60px;
     
@@ -72,8 +77,13 @@ body{
     width: 37px;
     border-radius: 10px;
     margin: 15px;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4); 
 }
-
+/* Quitamos bordes de buton que aparacen cuando esta activo */
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
 
 footer{
     background-color: rgb(24, 189, 240);
@@ -82,18 +92,37 @@ footer{
 	padding: 20px;
 	margin-top: 40px;
     text-decoration: none;
+    
 }
 
 footer p a{
     color: white;
 }
-@media(max-width:800px){
+.modal-header,.modal-footer{
+    border: none;
+}
+
+button, a{
+    text-decoration: none;
+    color: white;
+    
+}
+button, a:hover{
+    text-decoration: none;
+    color: white;   
+}
+h2{
+    color: rgb(6, 132, 170); ; 
+}
+
+@media(max-width:600px){
     ul{
         display: flex;
         flex-direction: column;
         align-items: center;
         
-    }   
+    } 
+    
     #forma{
         display: flex;
         flex-direction: column;
@@ -107,5 +136,7 @@ footer p a{
     .header-nav{
         padding-left: 0%;
     }
-    
+    label, .form-control{
+        font-size:13px ;
+    }
 }

@@ -1,20 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-html,body{
-    overflow-x: hidden;
-}
-body{
     font-family: 'Poppins';
-    color: white;
-    position: relative;
 }
 
-.container{
-    max-width: 100%;
-    margin: auto;
+
+body{
+    color: white;
+    
 }
 
 .bgn-image{
@@ -24,23 +17,36 @@ body{
     padding-top: 50px;
     padding-bottom: 20px; 
 }
-
+.container-general{
+    max-width: 100%;
+    margin: auto;
+}
 .header{
     background-color: rgb(4, 119, 134);
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    
+box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    /* si queremos haser nav-bar pegado a top de la pagina*/
+    position:fixed;
+    z-index:1000;
+	top:30px;
+	/*max-width:1000px;*/
+	left:0;
+	width:100%;
+	
 }
 
 .header-nav{
-    padding-left: 5%;
+    padding-left: 10%;
 }
-
 
 
 .logo img{
     width: 40px;
     border-radius: 10px; 
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
     margin: 15px;
 
 }
@@ -49,7 +55,7 @@ body{
     display: flex;
     justify-content: space-around;
     list-style: none;
-    gap:50px;
+    gap:60px;
 }
 
 .nav li{
@@ -70,7 +76,7 @@ body{
     font-family: 'Poppins';
     color: white;
     text-decoration: none;
-    margin-right: 15px;
+    margin-right:15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,14 +87,22 @@ body{
     width: 37px;
     border-radius: 10px;
     margin: 15px;
+box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
 }
 
+.container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
 .interior h2, p {
     text-align: center; 
 }
 
 .interior-slogan{
-    margin-top: 40px;
+    margin-top: 100px;
     font-size: 100px;
     font-weight: bold;  
 }
@@ -97,30 +111,52 @@ body{
     margin-top: 30px;
     font-size: 20px;
 }
-
-.interior-search{
-    display: block;
-    margin: 40px auto ;
+.search-interior{
+    display: flex;
+    justify-content:space-between;
+    margin: 60px auto;
     width: 360px;
     height: 60px;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255,0.5);
     border-radius: 30px;
     background-color:rgb(255, 255, 255,0.5);
     text-align: left;
-    padding-left: 15px;  
+    padding-left: 15px;
+box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.6);  
+    
 }
-
+.search-interior input{
+    flex: 1;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+    
+}
+.search-interior a img{
+    width: 35px;
+    margin:20%;
+}
+.search-interior a{
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    
+}
 
 .interior-search::placeholder{
     font-family: 'Poppins';
     font-size: 18px;
     color: white;
+    
 }
     
 .interior-search:focus{
     outline: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 18px;    
 }
 
 .content{
@@ -128,11 +164,14 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 3%;
+    max-width: 100%;
 }
 
 .content div a img:hover{
 transform: scale(1.25);
 transition: transform 0.3s;
+
+
 }
 
 .content div a img{
@@ -143,8 +182,6 @@ transition: transform 0.3s;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
     align-items: center;  
     background-color: rgb(4, 119, 134);
     margin:3% ,auto;       
@@ -153,8 +190,8 @@ transition: transform 0.3s;
 .oferr-text{
     
     display: flex;
-    margin: 40px auto; 
-    font-size: 40px;
+    margin: 70px auto; 
+    font-size: 30px;
     align-items: center;
     flex-direction: column; 
 }
@@ -163,33 +200,12 @@ transition: transform 0.3s;
     text-align: center;
 }
 
-.oferr-search{
-    display: block;
-    width: 360px;
-    height: 60px;
-    border: 1px solid white;
-    border-radius: 30px;
-    background-color:rgb(255, 255, 255,0.5);
-    padding-left: 15px;
-    margin: 5%; 
-}
-
-.oferr-search::placeholder{
-    font-family: 'Poppins';
-    font-size: 18px;
-    color: white; 
-}
-
-.oferr-search:focus{
-    outline:none;
-    font-size: 16px;
-    font-weight: bold;
-}
 
 .oferr-img img{
     max-width: 100%;
     border-radius: 30px;
     margin-right: 100px;
+box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.6); 
 }
 
 footer{
@@ -222,18 +238,18 @@ footer p a{
     color: white;
 }
 
-
 @media (max-width:600px){
     
     .container{
         max-width: 100%;
         display: block;
-        align-items: center;
+        align-items: center;     
     }
    
     .header{
         display:flex;
-        justify-content:space-around;
+        justify-content:space-between;
+        max-width: 100%;
     }
     .header-nav{
         padding-left: 0%;
@@ -246,26 +262,66 @@ footer p a{
         
     }
     .interior-slogan{
-        font-size: 45px;
+        margin-top: 150px;
+        font-size: 50px;
+        font-weight: bold;  
     }
     .content{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    .oferr{
+    .search-interior{
+        display: flex;
+        justify-content:space-between;
+        max-width:250px;
+        
+    }
+    .search-interior input{
+        max-width: 60%;
+    }
+    .oferr-text{
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        margin:50px auto; 
     }
+
+  
     .oferr-slogan,h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-    .oferr-search{
-        width: 250px;
-       
-    }
-    .interior-search{
-        width: 250px;
+    font-size: 30px;
+    
 }
+   
+    .search-interior a img{
+        width: 25px;
+        margin: 30%;
+
+    }    
 }
 
+@media ((min-width:580px) and (max-width:1285px)){
+   
+    .oferr{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .oferr-img img{
+        max-width: 100%;
+        border-radius: 30px;
+        display: inline-block;
+        margin-right: 0px;
+        margin-bottom: 5%;
+    } 
+    .search-interior{
+        display: flex;
+        justify-content:space-between;
+        width:250px;
+        
+    }
+    .search-interior input{
+        width: 150px;
+    } 
+}
