@@ -48,7 +48,7 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+
   list-style: none;
   gap: 60px;
 }
@@ -225,11 +225,11 @@ footer p a {
 }
 
 @media (max-width: 600px) {
-  .container {
+  /*  .container {
     max-width: 100%;
     display: block;
     align-items: center;
-  }
+  } */
 
   .header {
     display: flex;
