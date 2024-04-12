@@ -1,148 +1,147 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-body{
-    color: rgb(3, 60, 87);
-    
+body {
+  color: rgb(3, 60, 87);
 }
 
-.container-fluid{
-    max-width: 100%;
-    margin:  auto;
-    padding: 0;
+.container-fluid {
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
 }
 
-.header{
-    background-color:  rgb(4, 119, 134);
-    display: flex;
-    justify-content:space-between;
-    align-items: center; 
-    box-shadow:0px 4px 3px rgba(0,0,0,.5);
-    /* si queremos haser nav-bar pegado a top de la pagina
+.header {
+  background-color: rgb(4, 119, 134);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  /* si queremos haser nav-bar pegado a top de la pagina
     position:fixed;
     z-index:1000;
     top:30px;
     /*max-width:1000px;*/
-    /*left:0;*/
-    width: 100%;
-    margin-top: 30px; 
+  /*left:0;*/
+  width: 100%;
+  margin-top: 30px;
 }
 
-
-
-.logo img{
-    width: 40px;
-    border-radius: 10px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);   
-    margin: 15px;
+.logo img {
+  width: 40px;
+  border-radius: 10px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
+  margin: 15px;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    gap: 60px;
-    
+.nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 60px;
 }
-.nav li{
-    font-size: 18px;
-    
+.nav li {
+  font-size: 18px;
 }
 
-.nav li a{
-    text-decoration: none;     
+.nav li a {
+  text-decoration: none;
 }
 
-.nav li a:visited{
-    color: white;
+.nav li a:visited {
+  color: white;
 }
 
 .basket a {
-    font-size: 18px;
-    font-family: 'Poppins';
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+  font-size: 18px;
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.basket img{
-    width: 37px;
-    border-radius: 10px;
-    margin: 15px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4); 
+.basket img {
+  width: 37px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
 }
-div h1{
-    font-size: 60px;
-    font-weight: bold;
+div h1 {
+  font-size: 60px;
+  font-weight: bold;
 }
 
 /* Quitamos bordes de buton que aparacen cuando esta activo */
-.btn:focus{
-    outline: none;
-    box-shadow: none;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
-footer{
-    background-color: rgb(24, 189, 240);
-	color: white;
-	text-align: center;
-	padding: 20px;
-	margin-top: 40px;
-    text-decoration: none;
-    
+footer {
+  background-color: rgb(24, 189, 240);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  text-decoration: none;
 }
 
-footer p a{
-    color: white;
+footer p a {
+  color: white;
 }
-.modal-header,.modal-footer{
-    border: none;
-}
-
-button, a{
-    text-decoration: none;
-    color: white;
-    
-}
-button, a:hover{
-    text-decoration: none;
-    color: white;   
-}
-h2{
-    color: rgb(6, 132, 170); ; 
+.modal-header,
+.modal-footer {
+  border: none;
 }
 
-@media(max-width:600px){
-    .header{
-        display:flex;
-        justify-content:space-around;
-        
+button,
+a {
+  text-decoration: none;
+  color: white;
+}
+button,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  color: rgb(6, 132, 170);
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media (max-width: 768px) {
+    .btn {
+      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
     }
-    ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    } 
-    
-    #forma{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav{
-        display: flex;
-        flex-direction:column;
-        gap:10px
-    }
-    
-    label, .form-control{
-        font-size:13px ;
-    }
+  }
+  label,
+  .form-control {
+    font-size: 13px;
+  }
 }
