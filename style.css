@@ -283,6 +283,16 @@ footer p a {
     width: 25px;
     margin: 30%;
   }
+  .contenedor-iframe {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-right: 0;
+  }
+
+  .contenedor-iframe iframe {
+    width: 80%; /* Ajusta el ancho del iframe según sea necesario */
+    max-width: 80%; /* Opcional: establece un ancho máximo */
+  }
 }
 
 @media ((min-width: 601px) and (max-width:1285px)) {
