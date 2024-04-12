@@ -23,6 +23,7 @@ body {
   background-color: black;
 }
 .header {
+  max-width: 100%;
   background-color: rgb(4, 119, 134);
   display: flex;
   justify-content: space-between;
