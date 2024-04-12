@@ -135,11 +135,7 @@ h2 {
     flex-direction: column;
     gap: 10px;
   }
-  @media (max-width: 768px) {
-    .btn {
-      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
-    }
-  }
+
   label,
   .form-control {
     font-size: 13px;
