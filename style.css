@@ -276,7 +276,9 @@ footer p a {
   h2 {
     font-size: 30px;
   }
-
+  .oferr-img img {
+    margin-right: 0;
+  }
   .search-interior a img {
     width: 25px;
     margin: 30%;
