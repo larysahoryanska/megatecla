@@ -19,9 +19,7 @@ body {
   max-width: 100%;
   margin: auto;
 }
-.capa-hero {
-  background-color: black;
-}
+
 .header {
   max-width: 100%;
   background-color: rgb(4, 119, 134);
@@ -234,8 +232,11 @@ footer p a {
   .header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
-
+  .header-nav {
+    padding-left: 0%;
+  }
   .nav {
     gap: 10px;
     display: flex;
