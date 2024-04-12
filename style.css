@@ -277,7 +277,7 @@ footer p a {
   }
 }
 
-@media ((min-width: 580px) and (max-width:1285px)) {
+@media ((min-width: 601px) and (max-width:1285px)) {
   .oferr {
     display: flex;
     flex-wrap: wrap;
