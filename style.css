@@ -235,9 +235,9 @@ footer p a {
   }
 
   .header {
-    max-width: 100%;
+    max-width: 100vh;
     display: flex;
-
+    justify-content: space-around;
     align-items: center;
   }
   .header-nav {
