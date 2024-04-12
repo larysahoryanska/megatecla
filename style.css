@@ -223,11 +223,16 @@ footer p a {
 }
 
 @media (max-width: 600px) {
-  /*  .container {
+  .container-general {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .container {
     max-width: 100%;
     display: block;
     align-items: center;
-  } */
+  }
 
   .header {
     max-width: 100%;
