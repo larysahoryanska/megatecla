@@ -135,9 +135,15 @@ h2 {
     flex-direction: column;
     gap: 10px;
   }
-
+  .btn-responsive {
+    width: 100%;
+  }
+  .btn img {
+    width: 100%;
+  }
   label,
-  .form-control {
-    font-size: 13px;
+  .rounded-3 {
+    font-size: 22px;
+    min-width: 90% !important;
   }
 }
