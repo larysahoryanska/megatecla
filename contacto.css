@@ -108,6 +108,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 20%;
 }
 
 footer p a {
@@ -119,25 +120,6 @@ footer a:hover {
   color: white;
   text-decoration: none;
 }
-/*
-.modal-header,
-.modal-footer {
-  border: none;
-}
-
-button,
-a {
-  text-decoration: none;
-  color: white;
-}
-button,
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-h2 {
-  color: rgb(6, 132, 170);
-} */
 
 @media (max-width: 768px) {
   div h1 {
@@ -153,6 +135,9 @@ h2 {
   .col-6 {
     max-width: 50%;
   }
+  footer {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -160,38 +145,3 @@ h2 {
     font-size: 40px;
   }
 }
-/* .header {
-    display: flex;
-    justify-content: space-around;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #forma {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .btn-responsive {
-    width: 100%;
-  }
-  .btn img {
-    width: 100%;
-  }
-  #floating5 {
-    font-size: 14px !important;
-  }
-  label,
-  .rounded-3 {
-    font-size: 14px;
-    min-width: 90% !important;
-  }
-} */
