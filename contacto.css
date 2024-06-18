@@ -77,12 +77,15 @@ div h1 {
   font-weight: bold;
   margin-bottom: 3.5rem;
 }
-
+.col-1 {
+  align-self: center;
+  align-items: center;
+  margin: 3% auto;
+}
 .btn-primary {
   color: #fff;
   background-color: rgb(6, 132, 170);
-  margin: 3% auto;
-  align-self: center;
+
   align-items: center;
   border: none;
   box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
@@ -103,12 +106,6 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  z-index: 1000;
-  bottom: 0;
-  /*max-width:1000px;*/
-  left: 0;
-  width: 100%;
 }
 
 footer p a {
