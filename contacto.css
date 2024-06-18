@@ -80,7 +80,10 @@ div h1 {
 .btn-primary {
   color: #fff;
   background-color: rgb(6, 132, 170);
-  border-color: rgb(6, 132, 170);
+  margin: 3% auto;
+  align-self: center;
+  align-items: center;
+  border: none;
   box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
 }
 /* Quitamos bordes de buton que aparacen cuando esta activo */
