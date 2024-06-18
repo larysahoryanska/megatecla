@@ -12,6 +12,7 @@ body {
   max-width: 100%;
   margin: auto;
   padding: 0;
+  position: absolute;
 }
 
 .header {
@@ -78,8 +79,6 @@ div h1 {
   margin-bottom: 3.5rem;
 }
 .col-1 {
-  align-self: center;
-  align-items: center;
   margin: 3% auto;
 }
 .btn-primary {
@@ -106,13 +105,17 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p a {
   color: white;
   text-decoration: none;
 }
-footer p:hover {
+footer p:hover,
+footer a:hover {
   color: white;
   text-decoration: none;
 }
