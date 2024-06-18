@@ -6,13 +6,13 @@
 
 body {
   color: rgb(3, 60, 87);
+  position: absolute;
 }
 
 .container-fluid {
   max-width: 100%;
   margin: auto;
   padding: 0;
-  position: absolute;
 }
 
 .header {
