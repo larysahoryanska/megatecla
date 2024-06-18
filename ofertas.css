@@ -1,266 +1,254 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
-html,body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
-body{
-    color: white;
-    
-}
-
-.container{
-    max-width: 100%;
-    margin: auto;
+body {
+  color: white;
 }
 
-.header{
-    max-width: 100%;
-    background-color: rgb(4, 119, 134);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    box-shadow:0px 4px 3px rgba(0,0,0,.5); 
-    /* si queremos haser nav-bar pegado a top de la pagina*/
-    position:fixed;
-    z-index:1000;
-    top:30px;
-    /*max-width:1000px;*/
-    left:0;
-    width:100%; 
+.container {
+  max-width: 100%;
+  margin: auto;
 }
 
-.logo img{
-    width: 40px;
-    border-radius: 10px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);   
-    margin: 15px;
+.header {
+  max-width: 100%;
+  background-color: rgb(4, 119, 134);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  /* si queremos haser nav-bar pegado a top de la pagina*/
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  /*max-width:1000px;*/
+  left: 0;
+  width: 100%;
 }
 
-.nav{
-    display: flex;
-    list-style: none;
-    gap: 60px;
-    
-}
-.nav li{
-    font-size: 18px;    
+.logo img {
+  width: 40px;
+  border-radius: 10px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
+  margin: 15px;
 }
 
-.nav li a{
-    text-decoration: none;     
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+.nav li {
+  font-size: 18px;
 }
 
-.nav li a:visited{
-    color: white;
+.nav li a {
+  text-decoration: none;
+}
+
+.nav li a:visited {
+  color: white;
 }
 
 .basket a {
-    font-size: 18px;
-    font-family: 'Poppins';
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
+  font-size: 18px;
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.basket img{
-    width: 37px;
-    border-radius: 10px;
-    margin: 15px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
+.basket img {
+  width: 37px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
 }
 
-footer{
-    background-color: rgb(24, 189, 240);
-	color: white;
-	text-align: center;
-	padding: 20px;
-	margin-top: 40px;
-    text-decoration: none;
+footer {
+  background-color: rgb(4, 119, 134);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  text-decoration: none;
 }
-.oferr{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgb(4, 119, 134);
-    margin: 3%;
-    padding: 1%;
-    margin-top: 140px;
-    border-radius: 30px;       
+.oferr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(4, 119, 134);
+  margin: 3%;
+  padding: 1%;
+  margin-top: 140px;
+  border-radius: 30px;
 }
 
-.oferr-text{
+.oferr-text {
+  display: flex;
+  margin: 80px auto;
+  font-size: 40px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.oferr-slogan,
+h2 {
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  margin: 40px auto;
+  width: 360px;
+  height: 60px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255, 0.5);
+  text-align: left;
+  padding-left: 15px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.6);
+}
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 20px;
+}
+.search-box a img {
+  width: 35px;
+}
+.search-box a {
+  padding: 10px 12px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.interior-search::placeholder {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: white;
+}
+
+.interior-search:focus {
+  outline: none;
+  font-size: 18px;
+}
+.oferr-img img {
+  max-width: 100%;
+  border-radius: 30px;
+  margin-right: 100px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}
+
+.content-productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+
+.article-a1 img:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+  border-radius: 5%;
+}
+
+div img {
+  max-width: 100%;
+}
+.article-a1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  color: white;
+  background-color: rgb(4, 119, 134);
+  margin-top: 25%;
+  /* Para cambiar tamaño de buton cambiamos parring*/
+  padding: 3%;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+  /* Quitamos borderes de botones*/
+  border: 0;
+}
+button:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s;
+  box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+  background-color: rgb(7, 167, 216);
+  padding: 5%;
+}
+
+footer p a {
+  color: white;
+}
+@media (max-width: 600px) {
+  .header {
     display: flex;
-    margin: 80px auto; 
-    font-size: 40px;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column; 
-}
-
-.oferr-slogan,h2 {
-    text-align: center;
-}
-
-.search-box{
-    display: flex;
-    margin: 40px auto ;
-    width: 360px;
-    height: 60px;
-    border: 1px solid rgb(255, 255, 255,0.5);
-    border-radius: 30px;
-    background-color:rgb(255, 255, 255,0.5);
-    text-align: left;
-    padding-left: 15px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.6);
-      
-    
-}
-.search-box input{
-    flex: 1;
-    padding: 10px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    font-size: 20px;
-}
-.search-box a img{
-    width: 35px;
-
-}
-.search-box a{
-    padding: 10px 12px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    cursor: pointer;
-}
-
-.interior-search::placeholder{
-    font-family: 'Poppins';
-    font-size: 18px;
-    color: white;
-    
-}
-    
-.interior-search:focus{
-    outline: none;
-    font-size: 18px;
-    
-}
-.oferr-img img{
-    max-width: 100%;
-    border-radius: 30px;
-    margin-right: 100px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
-}
-
-.content-productos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5%;
-}
-
-.article-a1 img:hover{
-    transform: scale(1.25);
-    transition: transform 0.3s;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
-    border-radius: 5%;
-}
-
-div img{
-   max-width: 100%;
-   
-}
-.article-a1{
+  }
+  .header-nav {
+    padding-left: 0%;
+  }
+  .nav {
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+  }
+  .oferr-slogan,
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .content-productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+  }
+  .search-box input {
+    width: 130px;
+  }
 }
-button{
-    color: white;
-    background-color:rgb(4, 119, 134);
-    margin-top: 25%;
-    /* Para cambiar tamaño de buton cambiamos parring*/
-    padding: 3%;
+
+@media ((min-width: 600px) and (max-width:1285px)) {
+  .oferr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+  }
+  .oferr-img img {
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
-    /* Quitamos borderes de botones*/
-    border: 0;
-    
-}
-button:hover{
-    transform: scale(1.25);
-    transition: transform 0.3s;
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
-    background-color: rgb(7, 167, 216);
-    padding: 5%;
-}
-
-footer p a{
-    color: white;
-}
-@media(max-width:600px){
-   
-    .header{
-        display:flex;
-        justify-content:space-around;
-        align-items: center;
-    }
-    .header-nav{
-        padding-left: 0%;
-    }
-    .nav{
-        gap:10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .oferr-slogan,h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-  
-    .content-productos{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .search-box{
-        display: flex;
-        justify-content:space-between;
-        width:230px;
-        
-    }
-    .search-box input{
-        width: 130px;
-    } 
-}
-
-@media ((min-width:600px) and (max-width:1285px)){
-   
-    .oferr{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-    .oferr-img img{
-        max-width: 100%;
-        border-radius: 30px;
-        margin-bottom: 10%;
-        margin-right: 0px;
-        display: inline-block;
-    }  
+    border-radius: 30px;
+    margin-bottom: 10%;
+    margin-right: 0px;
+    display: inline-block;
+  }
 }
