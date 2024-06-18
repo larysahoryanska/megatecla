@@ -76,10 +76,7 @@ div h1 {
   font-size: 60px;
   font-weight: bold;
 }
-.imagen img {
-  max-width: 80%;
-  margin: 3% auto;
-}
+
 .btn-primary {
   color: #fff;
   background-color: rgb(6, 132, 170);
