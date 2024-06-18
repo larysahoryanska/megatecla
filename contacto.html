@@ -62,6 +62,7 @@
       <div class="text-center mt-5" style="color: rgb(47, 110, 174)">
         <h1>Registro de clientes</h1>
       </div>
+
       <div class="container-sm">
         <form class="row g-3 needs-validation" novalidate>
           <div class="col-md-4">
@@ -70,10 +71,9 @@
               type="text"
               class="form-control"
               id="validationCustom01"
-              value="Mark"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Por favor, introduzca su nombre</div>
           </div>
           <div class="col-md-4">
             <label for="validationCustom02" class="form-label">Apellidos</label>
@@ -81,10 +81,11 @@
               type="text"
               class="form-control"
               id="validationCustom02"
-              value="Otto"
               required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">
+              Por favor, introduzca sus apellidos
+            </div>
           </div>
 
           <div class="col-md-4">
@@ -100,10 +101,12 @@
                 aria-describedby="inputGroupPrepend"
                 required
               />
-              <div class="invalid-feedback">Please choose a username.</div>
+              <div class="invalid-feedback">
+                Por favor, introduzca su nombre de usuario
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <label for="validationCustom03" class="form-label">Email</label>
             <input
               type="email"
@@ -111,10 +114,12 @@
               id="validationCustom03"
               required
             />
-            <div class="invalid-feedback">Please provide a valid email.</div>
+            <div class="invalid-feedback">
+              Por favor, introduzca su email correcto
+            </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <label for="validationCustom05" class="form-label"
               >Contraseña</label
             >
@@ -124,7 +129,9 @@
               id="validationCustom05"
               required
             />
-            <div class="invalid-feedback">Please provide a valid zip.</div>
+            <div class="invalid-feedback">
+              Por favor, introduzca su contraseña
+            </div>
           </div>
           <div class="col-12">
             <div class="form-check">

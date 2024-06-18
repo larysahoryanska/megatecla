@@ -76,6 +76,9 @@ div h1 {
   font-size: 60px;
   font-weight: bold;
 }
+.img-thumbnail {
+  max-width: 100%;
+}
 
 /* Quitamos bordes de buton que aparacen cuando esta activo */
 .btn:focus {
@@ -84,7 +87,7 @@ div h1 {
 }
 
 footer {
-  background-color: rgb(24, 189, 240);
+  background-color: rgb(4, 119, 134);
   color: white;
   text-align: center;
   padding: 20px;
