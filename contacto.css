@@ -117,7 +117,7 @@ h2 {
   color: rgb(6, 132, 170);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   div h1 {
     font-size: 48px;
   }
