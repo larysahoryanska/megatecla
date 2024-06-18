@@ -77,7 +77,8 @@ div h1 {
   font-weight: bold;
 }
 .imagen img {
-  max-width: 100%;
+  max-width: 80%;
+  margin: 3% auto;
 }
 .btn-primary {
   color: #fff;
@@ -100,9 +101,11 @@ footer {
   text-decoration: none;
 }
 
-/* footer p a {
+footer p a {
   color: white;
+  text-decoration: none;
 }
+/*
 .modal-header,
 .modal-footer {
   border: none;
