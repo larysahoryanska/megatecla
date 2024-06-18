@@ -79,6 +79,10 @@ div h1 {
 }
 .col-6 {
   margin: 3% auto;
+  max-width: 50%;
+}
+.btn-primary {
+  min-width: 100%;
   color: #fff;
   background-color: rgb(6, 132, 170);
   max-width: 100%;
@@ -86,8 +90,7 @@ div h1 {
   border: none;
   box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.4);
 }
-.btn-primary {
-}
+
 /* Quitamos bordes de buton que aparacen cuando esta activo */
 .btn:focus {
   background-color: rgb(189, 9, 54);
