@@ -108,7 +108,8 @@ footer {
   text-align: center;
   padding: 20px;
   position: absolute;
-
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -141,9 +142,9 @@ h2 {
   color: rgb(6, 132, 170);
 } */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   div h1 {
-    font-size: 46px;
+    font-size: 44px;
   }
   .nav {
     gap: 10px;
@@ -154,7 +155,11 @@ h2 {
   .col-6 {
     max-width: 50%;
   }
+  .row {
+    max-width: 30%;
+  }
 }
+
 @media (max-width: 500px) {
   div h1 {
     font-size: 40px;
