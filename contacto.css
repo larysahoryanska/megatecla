@@ -108,7 +108,8 @@ footer {
   text-align: center;
   padding: 20px;
   position: absolute;
-
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -121,6 +122,25 @@ footer a:hover {
   color: white;
   text-decoration: none;
 }
+/*
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+button,
+a {
+  text-decoration: none;
+  color: white;
+}
+button,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  color: rgb(6, 132, 170);
+} */
 
 @media (max-width: 700px) {
   div h1 {
@@ -141,3 +161,38 @@ footer a:hover {
     font-size: 40px;
   }
 }
+/* .header {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn-responsive {
+    width: 100%;
+  }
+  .btn img {
+    width: 100%;
+  }
+  #floating5 {
+    font-size: 14px !important;
+  }
+  label,
+  .rounded-3 {
+    font-size: 14px;
+    min-width: 90% !important;
+  }
+} */
