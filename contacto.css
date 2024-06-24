@@ -127,6 +127,7 @@ footer a:hover {
 @media (max-width: 768px) {
   div h1 {
     font-size: 44px;
+    margin-top: 190px;
   }
   .nav {
     gap: 10px;
