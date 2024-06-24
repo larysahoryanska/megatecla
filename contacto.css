@@ -139,6 +139,9 @@ footer a:hover {
   .col-6 {
     max-width: 50%;
   }
+  .btn-primary {
+    margin: 3% auto;
+  }
   footer {
     margin-top: 0;
   }
