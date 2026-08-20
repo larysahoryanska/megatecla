@@ -35,7 +35,7 @@
           /></a>
         </div>
 
-        <div class="header-nav">
+        <nav class="header-nav" id="header-nav">
           <ul class="nav">
             <li class="nav-element">
               <a href="index.html">Tienda</a>
@@ -50,12 +50,23 @@
               <a href="contacto.html">Contacto</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="basket">
-          <a href="#"
-            ><img src="./imagenes/cesta.png" alt="Cesta_de_la_compra"
-          /></a>
+        <div class="header-actions">
+          <div class="basket">
+            <a href="#"
+              ><img src="./imagenes/cesta.png" alt="Cesta_de_la_compra"
+            /></a>
+          </div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="header-nav"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </header>
 
@@ -179,6 +190,7 @@
         >
       </p>
     </footer>
+    <script src="nav.js"></script>
     <script src="contacto.js"></script>
   </body>
 </html>

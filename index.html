@@ -18,9 +18,9 @@
         <header class="header">
             <div class="logo">
                 <a href="index.html"> <img src="./imagenes/logo2.png" alt="Tienda de informatica online Megatecla"></a>
-            </div> 
-            
-            <div class="header-nav">
+            </div>
+
+            <nav class="header-nav" id="header-nav">
                 <ul class="nav">
                     <li class="nav-element">
                         <a href="index.html">Tienda</a></li>
@@ -31,10 +31,15 @@
                     <li class="nav-element">
                         <a href="contacto.html">Contacto</a></li>
                 </ul>
-            </div>
-                            
-            <div class="basket">
-                <a href="#"><img src="./imagenes/cesta.png" alt="Cesta_de_la_compra"></a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="basket">
+                    <a href="#"><img src="./imagenes/cesta.png" alt="Cesta_de_la_compra"></a>
+                </div>
+                <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="header-nav">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </header>
         
@@ -112,5 +117,6 @@
         <p> &copy; Granada 2023 <a href="https://www.linkedin.com/in/larysahoryanskapronenko/"> Larysa Horyanska Pronenko</a></p>
     </footer>
     </div>
+    <script src="nav.js"></script>
 </body>
 </html>
